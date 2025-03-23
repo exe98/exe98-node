@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<body>
+    <h1>get data from server</h1>
+    <h4 id="text">no data</h4>
+</body>
+
+<script>
+    let text = document.getElementById("text")
+
+    fetch("/data")
+    .then(res => res.json())
+    .then(data => 
+    text.textContent = data
+    )
+</script>
+</html>
