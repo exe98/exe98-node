@@ -7,7 +7,7 @@
 <script>
     let text = document.getElementById("text")
 
-    fetch("https://exe98.onrender.com")
+    fetch("http://localhost:3000/data")
     .then(res => res.json())
     .then(data => 
     text.textContent = data
