@@ -10,8 +10,14 @@
     alert("trying to find data")
 
     fetch("http://localhost:3000/data")
-    .then(res => res.json())
-    .then(data => alert(data))
-    alert("1")
+    .then(res => {
+        res.json()
+        alert("1")
+    })
+    .then(data => {
+        alert(data);  // Show the data once it is received
+        alert("2");   // Then show alert "1"
+    });
+
 </script>
 </html>
