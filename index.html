@@ -7,10 +7,11 @@
 <script>
     let text = document.getElementById("text")
 
+    alert("trying to find data")
+
     fetch("http://localhost:3000/data")
     .then(res => res.json())
-    .then(data => 
-    text.textContent = data
-    )
+    .then(data => alert(data))
+    alert("1")
 </script>
 </html>
